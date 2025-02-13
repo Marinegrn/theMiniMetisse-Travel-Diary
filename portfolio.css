@@ -1,15 +1,15 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Righteous&display=swap');
 
 /* Tailwind latest version*/
 
 
 /* Design */
 *,
-*::before,
+*::before, /*création d'un pseudo-élément, cible firstchild*/
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; /* hauteur et largeur totale, n'inclu pas la marge*/
 }
 
 html {
@@ -22,17 +22,24 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 1rem;
+  padding: 1rem; /*en root element, plus pratique et ergonomique pour l'uitlisateur*/
 }
 
-.main{
+
+.girl-traveler {
   max-width: 1200px;
   margin: 0 auto;
-  font-family: "Righteous", serif;
-  font-weight: 400;
+  font-family: 'Righteous', serif;
+  font-weight: 500;
   font-style: normal;
 
   
+}
+
+.more {
+  font-family: 'Over the Rainbow', serif;
+  font-weight: 4000;
+  font-style: normal;
 }
 
 h1 {
@@ -89,6 +96,7 @@ img {
   }
 }
 
+ 
 .card {
   background-color: white;
   border-radius: 0.25rem;
@@ -100,7 +108,7 @@ img {
 
 .card_content {
   padding: 2rem;
-  background: linear-gradient(to bottom left, #8a4d56 18%, #ffd39e 100%);
+  background: linear-gradient(to bottom left, #723d45 18%, #fdba67 100%);
 }
 
 .card_title {
@@ -113,9 +121,10 @@ img {
 }
 
 .card_text {
-  color: #ffffff;
+  font-family: 'Over the Rainbow', serif;
+  color: #000000;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;    
   font-weight: 400;

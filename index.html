@@ -4,17 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="portfolio.css" rel="stylesheet">
-
-    <title>Porfolio / CV numérique Marine GAREIN</title>
+    <!--Ajout lien framework TailwindCSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Journal de Voyage</title>
 </head>
 
 <body>
 
     <header>
+
+      <div id="navbar" class="bg-indigo-900/40 text-white flex justify-between items-center flex-wrap p-2 px-6 rounded-lg">
+          <a href="index.html"></a>
+            <div class="more">
+              <h2>My Travel diary</h2>
+            </div>
+
+        <div class="block">
+          <label id="nav-toggle" for="toggleNavbar" class="flex gap-1 p-2 px-4 border
+          border-current rounded-lgcursor-pointer select-none
+          text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+              <path stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7">
+            </svg>
+            Parcourir
+              </path>
+          </label>
+        </div>
+      </div>
+
           <div class="main">
-            <h1>the Mini Métisse</h1>
-                <h2>My Travel diary</h2>
-    </header>
+  </header>
 
             <ul class="cards">
 
@@ -25,50 +49,46 @@
                   <div class="card_content">
                     <h2 class="card_title">Finlande</h2>
                     <p class="card_text">Helsinki</p>
-                    <button class="btn card_btn">Read More</button>
+                    <button class="btn card_btn">Voir</button>
                   </div>
                 </div>
               </li>              
 
               <!--Voyage 2-->
-
               <li class="cards_item">
                 <div class="card">
-                  <div class="card_image"><img src="pics/IMG_6182.jpg"></div>
+                  <div class="card_image"><img src="pics/IMG_6395.jpg"></div>
                   <div class="card_content">
                     <h2 class="card_title">l'île de la Réunion</h2>
                     <p class="card_text">Road trip</p>
-                    <button class="btn card_btn">Read More</button>
+                    <button class="btn card_btn ">Voir</button>
                   </div>
                 </div>
               </li>
 
               <!--Voyage 3-->
-              
               <li class="cards_item">
                 <div class="card">
                   <div class="card_image"><img src="pics/OCCI4.jpg"></div>
                   <div class="card_content">
-                    <h2 class="card_title">l'île de la Corse</h2>
+                    <h2 class="card_title">l'île de Corse</h2>
                     <p class="card_text">Haute-Corse & Portu, Corse-du-Sud</p>
-                    <button class="btn card_btn">Read More</button>
+                    <button class="btn card_btn">Voir</button>
                   </div>
                 </div>
               </li>
 
               <!--Voyage 4-->
-              
               <li class="cards_item">
                 <div class="card">
                   <div class="card_image"><img src="pics/142_edited.jpg"></div>
                   <div class="card_content">
                     <h2 class="card_title">Tchéquie</h2>
                     <p class="card_text">Prague</p>
-                    <button class="btn card_btn">Read More</button>
+                    <button class="btn card_btn">Voir</button>
                   </div>
                 </div>
               </li>
-
 
             </ul>
 
