@@ -1,134 +1,93 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shafarik&display=swap');
 
 /* Tailwind latest version*/
 
-
-/* Design */
-*,
-*::before, /*création d'un pseudo-élément, cible firstchild*/
-*::after {
-  box-sizing: border-box; /* hauteur et largeur totale, n'inclu pas la marge*/
-}
-
-html {
-  background-color: #eeecf0;
-}
-
 body {
-  color: #272727;
+
   font-family: 'Quicksand', serif;
-  font-style: normal;
+  background: linear-gradient(to bottom right, #39184e 20%, #e9b587 80%);
+  /*grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(4, 1fr);
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #272727;*/
+  /*font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 1rem; /*en root element, plus pratique et ergonomique pour l'uitlisateur*/
-}
-
-
-.girl-traveler {
-  max-width: 1200px;
-  margin: 0 auto;
-  font-family: 'Righteous', serif;
-  font-weight: 500;
-  font-style: normal;
-
+  padding: rem; /*en root element, plus pratique et ergonomique pour l'uitlisateur*/
   
 }
 
-.more {
-  font-family: 'Over the Rainbow', serif;
-  font-weight: 4000;
-  font-style: normal;
+.container {
+  display: flex;  
+  margin: auto;      /* Utilisation de flexbox */
+  justify-content: center;   /* Centrer horizontalement */
+  align-items: center;
+  align-content: center;       /* Centrer verticalement */
+  height: 100vh;             /*hauteur du viewport*/
 }
 
 h1 {
-    font-size: 24px;
-    font-weight: 400;
-    text-align: center;
-}
-
-h2 {
+  margin: 40px;
+  color: rgba(245, 242, 224, 0.919);
+  font-family: 'Over the Rainbow';
+  font-size: 40px;
+  font-weight: 600;
   text-align: center;
-  justify-content: center;
+  align-content: center;
+
 }
 
+
+.cards_item1, .cards_item2, .cards_item3, .cards_item4 {
+  width: 435px;
+  padding: 20px;
+  background-color: hsla(0, 80%, 98%, 0.449);
+  transition: 0.3s;
+  border-radius: 25% 8%;
+  border-color:hsl(263, 82%, 24%);
+  border-style: solid;
+  border-width: thin;
+  box-shadow: 8px 8px 15px 7px rgba(0,0,0, 60);
+  text-align: center;
+}
 img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.btn {
-  color: #ffffff;
-  padding: 0.8rem;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  font-weight: 400;
-  display: block;
   width: 100%;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
-}
-
-.btn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.cards_item {
-  display: flex;
-  padding: 1rem;
-}
-
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
- 
-.card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.card_content {
-  padding: 2rem;
-  background: linear-gradient(to bottom left, #723d45 18%, #fdba67 100%);
+  height: auto;
+  border-radius: 38% 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .card_title {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-  margin: 0px;
+  font-family: 'Righteous';
+  color: #202051;
+  font-size: xx-large;
+  font-weight: 200;
+
+}
+
+.card_language1 {
+  font-family: 'Shafarik';
+  font-style: italic;
+  font-size: larger;
+
 }
 
 .card_text {
-  font-family: 'Over the Rainbow', serif;
-  color: #000000;
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 1.25rem;    
-  font-weight: 400;
+  margin-top: 10%;
+  margin: 5px;
+  padding: 2px;
+  font-family: 'Over the Rainbow';
+  font-weight: 700;
+  color: rgb(45, 28, 40);
 }
+
+
+
 .made_by{
   font-weight: 400;
   font-size: 13px;
